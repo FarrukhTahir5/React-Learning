@@ -12,8 +12,7 @@ export default function TodoList({todos,deleteTodo,toggleTodo,editTodo}) {
     }
     return(
     <div className="todo-list">
-      <h1 className="Heading">Todo List App</h1>
-
+      <div className=""><h1 className="Heading">Todo List App</h1></div>
         {
             todos.map(todo=>(
                 <TodoItem onDelete={handleDelete} key={todo.id} id={todo.id} text={todo.text} completed={todo.completed} onToggle={handleToggle} onEdit={handleEdit}/>

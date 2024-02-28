@@ -3,15 +3,22 @@
   font-weight: 400;
   font-style: normal;
   text-align: center;
+  background-color: aqua;
+  height: 100%;
+
+}
+html, body, #app, #app>div {
+  height: 100%;
+  background-color: aqua;
 }
 .todo-list{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: aqua;
-  height: 30rem;
+  height: rem;
   border-radius: 30px;
-  margin: 5rem;
+  margin: 0px;
+  
 }
 .item{
   display: flex;
@@ -32,23 +39,19 @@
 }
 .taskName{
   width: 60%;
-}
-.taskName{
   justify-content: start;
+  align-items: center;
 }
 .edit-input{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50%;
+  width: 30rem;
   text-decoration: none;
   background-color: transparent;
   border: solid 1px white;
-  margin-right: 1rem;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 15px 0px 0px 15px;
   color: white;
+  height: 3rem;
+  margin-left: auto;
 }
 .change-button{
   border-radius: 5px;
@@ -56,6 +59,36 @@
   background-color: cyan;
   color: black;
   margin: 1rem;
+  margin-right: auto;
+  margin-left: 0;
+  height: 3.3rem;
+  border-radius: 0px 15px 15px 0px;
 
 
+}
+.addForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 7rem;
+  margin-top: 2rem;
+}
+.input-task{
+  width: 25rem;
+  height: 2rem;
+  border-radius: 5px 0px 0px 5px;
+  border: solid 1px 0px black;
+  padding-left: 1rem;
+  border-color: transparent;
+}
+.button-task{
+  width: 4rem;
+  height: 2.35rem;
+  border-radius: 0px 25px 25px 0px;
+  border-color: transparent;
+  margin-left: 1rem;
+}
+.button-task:hover{
+  color: white;
+  background-color: blue;
 }
